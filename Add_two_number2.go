@@ -42,16 +42,17 @@ func AddTwoNumbers(l1 *ListNode, l2 *ListNode) *ListNode {
 		if listp2.Next == nil && listp1.Next == nil {
 			break
 		}
+
 		if listp1.Next == nil {
 			add1 = 0
-			continue
+			//		continue
 		} else {
 			listp1 = listp1.Next
 			add1 = listp1.Val
 		}
 		if listp2.Next == nil {
 			add2 = 0
-			continue
+			//		continue
 		} else {
 			listp2 = listp2.Next
 			add2 = listp2.Val
