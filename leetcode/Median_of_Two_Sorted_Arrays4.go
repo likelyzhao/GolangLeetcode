@@ -72,6 +72,7 @@ func getHighlowIdx(num []int) (high, low, idx int) {
 		return
 	}
 }
+
 func FindMedianSortedArrays(nums1 []int, nums2 []int) float64 {
 	var tempmedian float64
 	//totallen := len(nums1) + len(nums2)

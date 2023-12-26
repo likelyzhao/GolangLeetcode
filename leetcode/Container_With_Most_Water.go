@@ -1,7 +1,6 @@
 package leecode
 
 func MaxArea(height []int) int {
-
 	var startidx, endidx int
 	var maxarea int
 	startidx = 0
