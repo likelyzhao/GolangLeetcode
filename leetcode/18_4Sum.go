@@ -1,7 +1,6 @@
 package leecode
 
 import (
-	"fmt"
 	"sort"
 )
 
@@ -78,7 +77,6 @@ func fourSum(nums []int, target int) [][]int {
 			continue
 		}
 		newtarget := target - nums[i]
-		fmt.Println(newtarget)
 		res := ThreeSum(nums[i+1:], newtarget)
 		for _, v := range res {
 			v = append([]int{nums[i]}, v...)
