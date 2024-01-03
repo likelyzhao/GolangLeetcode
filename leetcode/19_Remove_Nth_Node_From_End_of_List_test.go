@@ -33,17 +33,12 @@ The number of nodes in the list is sz.
 Follow up: Could you do this in one pass?
 */
 
-func ShowList(head *ListNode) []int {
-	var ans []int
-	for head != nil {
-		ans = append(ans, head.Val)
-		head = head.Next
-	}
-	return ans
-}
-
 func construclistfromarray(input []int) *ListNode {
 	//var outputList ListNode
+	if len(input) == 0 {
+		return nil
+	}
+
 	ptrList := &ListNode{Val: -1000, Next: nil}
 	res := ptrList
 	//fmt.Println(input)
